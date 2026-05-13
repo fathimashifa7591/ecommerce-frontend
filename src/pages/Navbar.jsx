@@ -28,7 +28,7 @@ const handleSearch = (e) =>{
 
 
   return(
-    <div className="flex justify-between items-center bg-blue-950 fixed top-0 left-0 ">
+    <div className="flex justify-between items-center bg-blue-950  ">
 
       {/*show logo */}
      <div className="flex items-center gap-2">

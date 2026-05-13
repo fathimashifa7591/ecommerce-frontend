@@ -45,13 +45,14 @@ function AddProduct() {
     formData.append("price", form.price);
     formData.append("category", form.category);
     formData.append("image", image);
+    formData.append("rating", form.rating);
 
     await addProduct(formData);
     navigate("/products");
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 p-4">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 p-4 mt-16">
       <input
         type="text"
         placeholder="Name"

@@ -50,6 +50,7 @@ function Products() {
       <div
         className="
       p-2
+      
       grid
       grid-cols-2
       gap-4
@@ -71,7 +72,7 @@ function Products() {
            "
              >
             <img
-              src={`http://localhost:5000${p.image}`}
+             src={`${import.meta.env.VITE_API_URL}${p.image}`}
               alt={p.name}
               className="
               w-55

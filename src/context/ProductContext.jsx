@@ -29,7 +29,7 @@ export const ProductsProvider = ({ children }) => {
     try {
 
       await axios.post(
-        "http://localhost:5000/products",
+        `${import.meta.env.VITE_API_URL}/products`,
         formData,
         {
           headers: {
